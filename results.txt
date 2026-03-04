@@ -1,0 +1,53 @@
+=================================================================
+🚀 AUTOMATED MACHINE LEARNING REGRESSION PIPELINE
+=================================================================
+
+📂 Enter CSV file path: D:\Webisoft\ML\Ch21\Home prices.csv
+
+✅ Dataset Loaded Successfully
+Rows    : 1460
+Columns : 81
+🧹 ID-like columns removed
+🔧 Missing values handled
+🔄 Categorical variables encoded
+
+📊 Total Features: 230
+First 20 Columns:
+
+['MSSubClass', 'LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath']
+
+🎯 Enter target column: SalePrice
+📉 Feature selection completed
+✂ Dataset split into training and testing sets
+
+🤖 Training Models...
+
+
+=================================================================
+🏆 MODEL PERFORMANCE LEADERBOARD
+=================================================================
+                       R2 Score       MAE           MSE      RMSE
+ElasticNet Regression    0.8818  19028.94  9.068604e+08  30114.12
+Ridge Regression         0.8812  19331.69  9.113198e+08  30188.07
+Linear Regression        0.8799  19627.07  9.209987e+08  30347.96
+Lasso Regression         0.8799  19626.44  9.209527e+08  30347.20
+
+⭐ Best Model Selected: ElasticNet Regression
+💾 Best model saved as: best_model.pkl
+
+📊 Top Important Features
+KitchenQual_TA          13597.073142
+KitchenQual_Gd          11939.202985
+BsmtQual_Gd             11698.404431
+OverallQual             11580.987620
+BsmtQual_TA             11550.993563
+GrLivArea                9763.051405
+2ndFlrSF                 8748.765776
+Neighborhood_NoRidge     8570.061026
+RoofStyle_Gable          7872.137822
+1stFlrSF                 7658.724190
+dtype: float64
+
+=================================================================
+✅ Pipeline Execution Completed Successfully
+=================================================================
